@@ -1,0 +1,38 @@
+[{
+    "id": "numeric_1",
+    "data": {
+        "subject": "Repairs",
+        "subjectCount": "(10)",
+        "price": "$7645.89",
+        "detail1": "(25%)",
+        "detail2": "($5000)"
+    }
+}, {
+    "id": "numeric_2",
+    "data": {
+        "subject": "Repairs2",
+        "subjectCount": "(10)",
+        "price": "$7645.89",
+        "detail1": "(25%)",
+        "detail2": "($5000)"
+    }
+}, {
+    "id": "numeric_3",
+    "data": {
+        "subject": "Repairs3",
+        "subjectCount": "(10)",
+        "price": "$7645.89",
+        "detail1": "(25%)",
+        "detail2": "($5000)"
+    }
+},
+{
+    "id": "numeric_4",
+    "data": {
+        "subject": "Repairs4",
+        "subjectCount": "(10)",
+        "price": "$7645.89",
+        "detail1": "(25%)",
+        "detail2": "($5000)"
+    }
+}]

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Dashboard Builder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/milligram.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <!-- W Header Nav -->
+    <div class="row nav" style="background-color: #273947;">
+        <div class="column column-15" >
+            <img id="logo" src="./src/images/repairDesk.PNG" alt="">
+        </div>
+        <div class="column column-70" >Menu Items</div>
+        <div class="column column-15" >Account Items</div>
+    </div>
+
+    <div class="container">
+        <!-- W Greeting -->
+        <div id="greeting" class="row">
+            <div class="column column-20">
+                greeting ...
+            </div>
+            <div class="column column-80">
+                <div class="row">
+                    <div class="column">
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="area_1" class="column column-60">
+            </div>
+            <div id="area_2" class="column column-40">
+            </div>
+        </div>
+    </div>
+
+    <script src="/src/js/global.js"></script>
+    <script src="/src/config/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script>     
+        let area_1_obj = mainConfig.area_1_cards;
+        let area_2_obj = mainConfig.area_2_cards;
+        let area_1_widgets = collect(area_1_obj, "widget");
+        let area_2_widgets = collect(area_2_obj, "widget");
+        let area_1_priorities = collect(area_1_obj, "priority");
+        let area_2_priorities = collect(area_2_obj, "priority");
+        let area_1_properties = collect(area_1_obj, "property");
+        let area_2_properties = collect(area_2_obj, "property");
+
+        createAreaUI(area_1_properties, "area_1");
+        createAreaUI(area_2_properties, "area_2");
+        specifyWidgetsIntoPositions(area_1_obj);
+        specifyWidgetsIntoPositions(area_2_obj);
+
+        let widgets = [...new Set([...area_1_widgets, ...area_2_widgets])];
+        let priorities = [...new Set([...area_1_priorities, ...area_2_priorities])];
+        let sortedWidgets = sort(widgets, priorities);
+         
+        for (let i = 0; i < mainConfig.chartURL.length; i++) {
+            loadScript(mainConfig.chartURL[i])
+        }
+
+        for (let i = 0; i < sortedWidgets.length; i++) {
+            loadScript(`src/widgets/${sortedWidgets[i]}/${sortedWidgets[i]}.js`, `widget-${sortedWidgets[i]}`, `src/config/${sortedWidgets[i]}.json`)
+        }
+    </script>
+</body>
+</html>

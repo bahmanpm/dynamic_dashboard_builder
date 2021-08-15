@@ -1,0 +1,18 @@
+[{
+    "jQueryLink": "https://code.jquery.com/jquery-3.3.1.min.js",
+    "id": "numeric_1",
+    "tabName": "Ticket",
+    "head": ["Ticket #", "Task", "Pickup time", "Assign to", "Customer", "Status"],
+    "body": [
+        ["1", "iphone", "15/8/2021", "David", "8384554  "],
+        ["2", "android", "15/8/2021", "Omer", "7854522", "Done"]
+    ]
+}, {
+    "id": "numeric_2",
+    "tabName": "Appointments",
+    "head": ["Appointment #", "Task", "Pickup time", "Assign to", "Customer", "Status"],
+    "body": [
+        ["8", "windows", "18/8/2021", "Nikita", "9896144", "Pending"],
+        ["9", "windows", "19/8/2021", "Hooman", "7811123", "Pending"]
+    ]
+}]

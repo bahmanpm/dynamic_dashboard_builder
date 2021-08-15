@@ -1,0 +1,12 @@
+[{
+    "id": "progress",
+    "data": {
+        "img": "sentrix.png",
+        "title": "Profile Info",
+        "hasTitle": false,
+        "subject": "Store Profile",
+        "progress": "70",
+        "linkTitle": "Complete Your profile",
+        "link": "https://www.bayt.com/"
+    }
+}]

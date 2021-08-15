@@ -1,0 +1,19 @@
+[{
+  "id": "gaugechartdiv",
+  "data_pieSeries": [{
+    "category": "",
+    "value": 80
+  }, {
+    "category": "Unused",
+    "value": 20,
+    "labelDisabled":true
+  }],
+  "data_pieSeries2": [{
+    "category": "Used",
+    "value": 80
+  }, {
+    "category": "Remaining",
+    "value": 20,
+    "fill":"#dedede"
+  }]
+}]

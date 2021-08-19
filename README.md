@@ -44,3 +44,5 @@ index.html
       |--table.js
    
 ```
+
+For each widget, a js file in widgets folder and a json config file in config folder has been considered. the js file can create instances of the widget using information in the config file. each widget can be loaded using `loadScript` in index.html and appears in specified position in `main.js`.

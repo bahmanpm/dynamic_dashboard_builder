@@ -61,5 +61,5 @@ Generaly, Two main areas have been considered for the dashbourd and new widgets 
 
 The property `position_1_area_1` will be used as the widget id and `createAreaUI` function uses them to generate a basic UI.
 
-In this project liberaries below has been used :
+In this project liberaries below has been used : <br >
 milligram (a tiny css framework), jQuery, amChart

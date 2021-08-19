@@ -55,7 +55,8 @@ Generaly, Two main areas have been considered for the dashbourd and new widgets 
     "priority": 1, // determines the order of loading widgets
     "id": "", // chart id 
     "size": "halfFromStart" // determine size of widget using classes have been defined in styles.css
-},```
+},
+```
 
 The property `position_1_area_1` will be used as the widget id and `createAreaUI` function uses them to generate a basic UI.
 

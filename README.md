@@ -5,7 +5,7 @@
 1. download the code. <br />
 2. run it on a local server (for example http-server). <br />
 
-you can install http-server using command below. <br />
-         ```npm install --global http-server ``` <br />
-then navigate to the code path and run : <br />
-        ``` http-server ``` <br />
+you can install http-server using command below. <br /><br />
+```npm install --global http-server ``` <br />
+then navigate to the code path and run : <br /><br />
+```http-server ``` <br /><br />

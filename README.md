@@ -49,13 +49,14 @@ For each widget, a js file in widgets folder and a json config file in config fo
 
 Generaly, Two main areas have been considered for the dashbourd and new widgets can be added as new objects. for example :
 
-```"position_1_area_1": {
+```
+"position_1_area_1": {
     "classList": ["widget-numeric", "widget-numeric_0"], // widget classes
     "widget": "numeric", // widget type
     "priority": 1, // determines the order of loading widgets
     "id": "", // chart id 
     "size": "halfFromStart" // determine size of widget using classes have been defined in styles.css
-},
+}
 ```
 
 The property `position_1_area_1` will be used as the widget id and `createAreaUI` function uses them to generate a basic UI.
